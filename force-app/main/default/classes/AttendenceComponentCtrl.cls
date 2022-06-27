@@ -126,7 +126,6 @@ public without sharing class AttendenceComponentCtrl {
             eachStudentAttendence.hed__Contact__c = eachStudent.contactId;
             eachStudentAttendence.hed__Course_Connection__c = eachStudent.courseEnrollmentId;
             attendence.add(eachStudentAttendence);
-              system.debug('eachStudentAttendence '+eachStudentAttendence);
         }
         system.debug('attendence list '+attendence);
         if(!attendence.isEmpty())
